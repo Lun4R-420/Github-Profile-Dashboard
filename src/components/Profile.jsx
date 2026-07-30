@@ -13,7 +13,21 @@ function Profile({ username }) {
     }
 
     useEffect(() => {
-        if (username.trim() === "") return;
+        if (username.trim() === "") {
+            fetch("https://api.github.com/users/GitHub")
+                .then((response) => {
+                    console.log("Response:", response);
+                    if (!response.ok) {
+                        throw new Error("User not found");
+                    }
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log("Data:", data);
+                    setProfile(data);
+                })
+                .catch((error) => console.log("Error:", error));
+        }
 
         fetch(`https://api.github.com/users/${username.trim()}`)
             .then((response) => {
@@ -32,7 +46,17 @@ function Profile({ username }) {
     }, [username]);
 
     useEffect(() => { 
-        if (username.trim() === "") return; 
+        if (username.trim() === "") {
+            fetch("https://api.github.com/users/GitHub/repos")
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Repos not found"); 
+                    }
+                    return response.json();
+                })
+                .then((data) => setRepos(data)) 
+                .catch((error) => console.log("Fetching the user's repos: ", error)) 
+        } 
         fetch(`https://api.github.com/users/${username.trim()}/repos`) 
             .then((response) => { 
                 if (!response.ok) { 
