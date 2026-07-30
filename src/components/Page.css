@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("src/assets/hero-image-github-profile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 20px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+@media (max-width: 768px) {
+    header {
+        background-size: 100% 100%;
+        height: 100px;
+    }
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #20293A;
+    border-radius: 10px;
+    padding: 0 15px;
+    gap: 10px;
+    width: 100%;
+    max-width: 700px;;
+}
+
+.search-bar > img {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #CDD5E0;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #CDD5E0;
+}
+
+main {
+    background-color: #20293A;
+    min-height: 100vh;
+}

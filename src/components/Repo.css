@@ -1,0 +1,40 @@
+.repo-container {
+    background: linear-gradient(to right, #111729, #1D1B48);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    min-height: 100px;
+}
+
+.repo-container h2 {
+    color: #CDD5E0;
+}
+
+.desc {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #97A3B6;
+}
+
+.emotes {
+    display: flex;
+    align-items: center;
+    color: #97A3B6;
+    gap: 0.5rem;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.emotes > h3 {
+    font-weight: 400;
+}
+
+.emotes > p {
+    margin-left: 20px;
+    font-size: 0.75rem;
+}
