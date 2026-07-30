@@ -1,16 +1,27 @@
-# React + Vite
+# GitHub Profile Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An application build using React that allows users to search for and view GitHub profiles.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search GitHub users
+- Display profile information and repositories
+- Responsive design
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- CSS
+- Vite
+- GitHub API
 
-## Expanding the ESLint configuration
+## What I learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React state management
+- Working with APIs
+- Practiced responsive design in CSS
+
+## Live Demo
+
+https://lun4r-420.github.io/Github-Profile-Dashboard/
