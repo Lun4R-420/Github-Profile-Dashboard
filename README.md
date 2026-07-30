@@ -22,6 +22,16 @@ An application build using React that allows users to search for and view GitHub
 - Working with APIs
 - Practiced responsive design in CSS
 
+## Screenshot
+
+### Desktop
+
+![Desktop preview](./screenshots/desktop-screenshot.png)
+
+### Mobile 
+
+![Mobile preview](./screenshots/mobile-screenshot.png)
+
 ## Live Demo
 
 https://lun4r-420.github.io/Github-Profile-Dashboard/
